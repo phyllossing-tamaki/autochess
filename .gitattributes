@@ -1,0 +1,44 @@
+# 文本文件统一 LF，避免两台设备换行符差异导致 Godot 资源文件被整份重写
+* text=auto eol=lf
+
+# Godot 文本资源保持 LF，且不做并集合并（并集合并会损坏 tscn/tres）
+*.gd    text eol=lf
+*.gdshader text eol=lf
+*.tscn  text eol=lf
+*.tres  text eol=lf
+*.cfg   text eol=lf
+
+# ===== Git LFS：美术 / 音频 / 字体等二进制资源 =====
+# 图片
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+*.gif  filter=lfs diff=lfs merge=lfs -text
+*.bmp  filter=lfs diff=lfs merge=lfs -text
+*.svg  filter=lfs diff=lfs merge=lfs -text
+*.tga  filter=lfs diff=lfs merge=lfs -text
+
+# 源工程文件（像素画 / 音频工程）
+*.aseprite filter=lfs diff=lfs merge=lfs -text
+*.ase      filter=lfs diff=lfs merge=lfs -text
+*.psd      filter=lfs diff=lfs merge=lfs -text
+*.xcf      filter=lfs diff=lfs merge=lfs -text
+*.flp      filter=lfs diff=lfs merge=lfs -text
+*.aup      filter=lfs diff=lfs merge=lfs -text
+
+# 音频
+*.wav  filter=lfs diff=lfs merge=lfs -text
+*.ogg  filter=lfs diff=lfs merge=lfs -text
+*.mp3  filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+
+# 字体
+*.ttf   filter=lfs diff=lfs merge=lfs -text
+*.otf   filter=lfs diff=lfs merge=lfs -text
+*.woff  filter=lfs diff=lfs merge=lfs -text
+*.woff2 filter=lfs diff=lfs merge=lfs -text
+
+# 二进制资源 / 打包
+*.res filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text

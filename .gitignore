@@ -1,0 +1,29 @@
+# Godot 4+ — 编辑器导入缓存、UID 缓存、全局类缓存，各机器本地生成
+.godot/
+/android/
+export_presets.cfg
+
+# 构建产物
+/build/
+/export/
+*.pck
+*.translation
+export/
+
+# 注意：Godot 4.4+ 为每个 .gd 生成的 *.uid 文件应当【提交】，
+# 否则两台设备各自生成不同 uid，会导致 .tscn 里的 uid:// 引用失效。
+# （缓存 .godot/ 已整体忽略，无需在此处理）
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+*.tmp
+
+# opencode / 本地环境
+.env
+.env.*
