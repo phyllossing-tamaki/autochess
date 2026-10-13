@@ -15,11 +15,12 @@
 - `data/`     棋子 / 羁绊 / 关卡等配置（优先 json 或 .tres）
 
 ## 常用命令
-- 编辑器打开：`godot --path . --editor`
-- 直接运行：`godot --path .`
-- 运行主场景：`godot --path . res://scenes/main.tscn`
-- 无窗口导入（CI/校验资源）：`godot --headless --path . --import`
+本机未把 Godot 装到系统 PATH；项目自带便携版在 `tools/godot/`（仅 `.bat` 脚本入库，编辑器 exe 已在 .gitignore 忽略，每台机器各自放置）。
+- 编辑器打开：`godot --path . --editor` 或 `tools\godot\editor.bat`
+- 直接运行：`godot --path .` 或 `tools\godot\run.bat`
+- 无窗口导入（CI/校验资源）：`godot --headless --path . --import` 或 `tools\godot\import.bat`
 - 运行测试：`godot --headless --path . -s addons/gut/gut_cmdln.gd`（若接入 GUT）
+- 关键：GitHub 需走本机代理 `http://127.0.0.1:7897`（已写入 git 全局 `http.https://github.com.proxy`）
 
 ## 代码风格
 - 遵循 Godot 官方 GDScript 风格指南；缩进用 **制表符（Tab）**

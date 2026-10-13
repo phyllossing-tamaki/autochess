@@ -3,6 +3,10 @@
 /android/
 export_presets.cfg
 
+# 便携版 Godot 编辑器（各机器本地放置，勿提交，~156MB）
+# 保留 tools/godot/*.bat 启动脚本，只忽略可执行文件
+/tools/godot/*.exe
+
 # 构建产物
 /build/
 /export/
