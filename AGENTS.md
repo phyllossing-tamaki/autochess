@@ -4,7 +4,7 @@
 - 类型：像素风自走棋（Auto Chess）独立游戏
 - 引擎：**Godot 4.x**，脚本语言 **GDScript**
 - 渲染：`gl_compatibility`（2D 像素，兼容性优先）
-- 逻辑分辨率 640x360，`canvas_items` 拉伸 + `keep` 比例，纹理过滤为 **Nearest**
+- 逻辑分辨率 1280x720，`canvas_items` 拉伸 + `keep` 比例，纹理过滤为 **Nearest**
 
 ## 目录约定
 - `scenes/`   场景（.tscn）
