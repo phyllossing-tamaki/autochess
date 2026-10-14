@@ -1,5 +1,6 @@
 @echo off
-rem Run the project (main scene).
+rem Run the project (main scene, auto-detect).
+call "%~dp0_godot_path.bat" || exit /b 1
 pushd "%~dp0..\.."
-"%~dp0Godot_v4.5.1-stable_win64.exe" --path .
+"%GODOT_GUI%" --path .
 popd

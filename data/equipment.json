@@ -1,0 +1,25 @@
+[
+	{
+		"id": "EQP_001",
+		"name_zh": "铁剑",
+		"name_en": "Iron Sword",
+		"name_ja": "鉄の剣",
+		"tier": 1,
+		"rarity": "普通",
+		"cost": 1,
+		"slot": "weapon",
+		"icon": "res://assets/sprites/equip/iron_sword.png",
+		"stat_atk": 5,
+		"stat_ap": 0,
+		"stat_def": 0,
+		"stat_hp": 0,
+		"mod_atk_pct": 0,
+		"mod_amp_pct": 0,
+		"mod_crit_pct": 0,
+		"mod_res_pct": 0,
+		"effect_id": "EFF_ATK_UP",
+		"effect_zh": "攻击 +5",
+		"tags": "weapon",
+		"note": "示例行"
+	}
+]

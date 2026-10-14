@@ -1,0 +1,17 @@
+[
+	{
+		"id": "SYN_001",
+		"name_zh": "龙",
+		"name_en": "Dragon",
+		"name_ja": "竜",
+		"category": "种族",
+		"tier1_count": 1,
+		"tier1_effect": "固定占用 2 人口",
+		"tier2_count": 2,
+		"tier2_effect": "全队攻击 +15%",
+		"tier3_count": 3,
+		"tier3_effect": "全队攻击 +30%",
+		"tags": "race",
+		"note": "示例行"
+	}
+]

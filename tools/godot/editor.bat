@@ -1,5 +1,6 @@
 @echo off
-rem Open this project in the Godot editor.
+rem Open this project in the Godot editor (auto-detect Godot executable).
+call "%~dp0_godot_path.bat" || exit /b 1
 pushd "%~dp0..\.."
-"%~dp0Godot_v4.5.1-stable_win64.exe" --path . --editor
+"%GODOT_GUI%" --path . --editor
 popd

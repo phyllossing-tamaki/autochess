@@ -1,0 +1,23 @@
+[
+	{
+		"id": "SKL_001",
+		"name_zh": "火焰箭",
+		"name_en": "Flame Arrow",
+		"name_ja": "火炎の矢",
+		"type": "damage",
+		"target": "nearest_enemy",
+		"range": 2,
+		"max_mana": 100,
+		"cast_time": 3,
+		"cooldown": 0,
+		"scaling": "2x_atk",
+		"effect_id": "EFF_BURN",
+		"param1": 2,
+		"param2": 3,
+		"desc_zh": "造成 2×攻击的火焰伤害并附加灼烧",
+		"desc_en": "Deal 2x ATK fire damage and apply burn",
+		"desc_ja": "攻撃 2 倍の炎ダメージと火傷",
+		"tags": "skill",
+		"note": "示例行"
+	}
+]

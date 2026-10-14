@@ -1,0 +1,18 @@
+[
+	{
+		"id": "REL_001",
+		"name_zh": "龙鳞",
+		"name_en": "Dragon Scale",
+		"name_ja": "竜の鱗",
+		"icon": "res://assets/sprites/relic/dragon_scale.png",
+		"rarity": "稀有",
+		"trigger": "战斗开始",
+		"effect_id": "EFF_ARMOR",
+		"effect_zh": "开局获得 2 点护甲",
+		"effect_en": "Gain 2 armor at battle start",
+		"effect_ja": "戦闘開始時に防御 +2",
+		"unlock": "通关难度 1",
+		"tags": "relic",
+		"note": "示例行"
+	}
+]

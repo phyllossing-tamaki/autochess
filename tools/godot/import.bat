@@ -1,5 +1,6 @@
 @echo off
-rem Headless asset import / validation (CI-safe).
+rem Headless asset import / validation (CI-safe, auto-detect).
+call "%~dp0_godot_path.bat" || exit /b 1
 pushd "%~dp0..\.."
-"%~dp0Godot_v4.5.1-stable_win64_console.exe" --headless --path . --import
+"%GODOT_CONSOLE%" --headless --path . --import
 popd

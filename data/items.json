@@ -1,0 +1,19 @@
+[
+	{
+		"id": "ITM_001",
+		"name_zh": "治疗药水",
+		"name_en": "Healing Potion",
+		"name_ja": "回復薬",
+		"icon": "res://assets/sprites/item/potion_heal.png",
+		"cost": 3,
+		"target": "ally",
+		"use_phase": "战斗",
+		"effect_id": "EFF_HEAL",
+		"effect_zh": "恢复 30 点生命",
+		"effect_en": "Restore 30 HP",
+		"effect_ja": "30 HP 回復",
+		"stack": 1,
+		"tags": "consumable",
+		"note": "示例行"
+	}
+]
