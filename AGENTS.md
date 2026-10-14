@@ -40,3 +40,14 @@
 - 二进制美术资源走 LFS；不要手动修改 LFS 指针文件
 - `.tscn` / `.tres` 为文本格式，冲突时手动合并，勿用并集合并
 - 每次切换设备前务必提交并推送，避免两端各自修改同一场景
+
+## 工作日志（飞书）
+- 文档：**工作日志** → https://my.feishu.cn/wiki/D8UNwjAzIiTRBpkOsHMcINMznEP
+- 约定：每次收工 `git commit + push` 后，在飞书「工作日志」文档**按日期追加**一条记录，说明当日完成的工作与改动，并附本次提交信息（commit 短 hash + 一句话）。
+- 追加位置：文档末尾（按日期递增，最新在最后）。
+- 相关工具与凭据：见 `tools/feishu/`；凭据放仓库根 `.env`（已 gitignore）。
+
+## 数据管线（飞书 → 代码）
+- 子表（两行表头：第 1 行英文 key、第 2 行中文；数据从第 3 行起）→ `tools/feishu/export.mjs` 导出为 `data/*.json` → `DataLoader`（autoload）读取。
+- 字段名必须与表头英文 key 一致；跨表关联统一走 `id` / `effect_id`。
+- 运行：`node tools/feishu/export.mjs`；校验：`godot --headless --path . -s res://scripts/dev/validate_data.gd`。
