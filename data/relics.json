@@ -5,7 +5,7 @@
 		"name_en": "Dragon Scale",
 		"name_ja": "竜の鱗",
 		"icon": "res://assets/sprites/relic/dragon_scale.png",
-		"rarity": "稀有",
+		"rarity": "卓越",
 		"trigger": "战斗开始",
 		"effect_id": "EFF_ARMOR",
 		"effect_zh": "开局获得 2 点护甲",

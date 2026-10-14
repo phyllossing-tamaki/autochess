@@ -4,8 +4,8 @@ extends Node
 ## 从 res://data/ 读取由飞书子表导出的 JSON（数组，元素为一行，字段名 = 表头英文 key），
 ## 按 id 建立索引，供游戏逻辑只读访问。
 ##
-## 管线：飞书子表 → 导出 JSON → data/<表名>.json → 本加载器。
-## 例：get_row("equipment", "EQP_001").stat_atk
+## 管线：飞书子表 → tools/feishu/export.mjs → data/<表名>.json → 本加载器。
+## 例：DataLoader.get_row("equipment", "EQP_001").stat_atk
 
 const DATA_DIR := "res://data/"
 
@@ -89,6 +89,39 @@ func column(table_name: String, key: String) -> Array:
 	return out
 
 
+# ---- typed getters（语义化取数） ----
+
 ## 便捷：按 id 取效果定义（效果表）。
 func get_effect(effect_id: String) -> Dictionary:
 	return get_row("effects", effect_id)
+
+func get_equipment(id: String) -> Dictionary:
+	return get_row("equipment", id)
+
+func get_item(id: String) -> Dictionary:
+	return get_row("items", id)
+
+func get_relic(id: String) -> Dictionary:
+	return get_row("relics", id)
+
+func get_synergy(id: String) -> Dictionary:
+	return get_row("synergies", id)
+
+func get_skill(id: String) -> Dictionary:
+	return get_row("skills", id)
+
+func get_blessing(id: String) -> Dictionary:
+	return get_row("blessings", id)
+
+
+## 取某行的效果定义（读其 effect_id）。
+func effect_of(row: Dictionary) -> Dictionary:
+	var effect_id: String = str(row.get("effect_id", ""))
+	return get_effect(effect_id) if effect_id != "" else {}
+
+
+## 取某行某个枚举字段的整数值，如 enum_of(row, "rarity", DataEnums.rarity)。
+func enum_of(row: Dictionary, key: String, parser: Callable) -> int:
+	if not row.has(key):
+		return -1
+	return parser.call(row[key])
