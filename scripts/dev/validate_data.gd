@@ -16,7 +16,7 @@ const SCHEMA := {
 		"required": ["id", "name_zh", "kind", "cost"],
 		"refs": {"effect_id": "effects"},
 		"enums": {"kind": "equip_kind"},
-		"ranges": {"cost": [0, 99999], "stat_mana": [0, 9999], "stat_mana_regen": [0, 9999]},
+		"ranges": {"cost": [0, 99999], "stat_mana": [0, 9999], "stat_mana_regen": [0, 9999], "mod_amp_pct": [0, 1000]},
 	},
 	"items": {
 		"prefix": "ITM_",
