@@ -13,10 +13,10 @@ const SCHEMA := {
 	},
 	"equipment": {
 		"prefix": "EQP_",
-		"required": ["id", "name_zh", "rarity", "cost"],
+		"required": ["id", "name_zh", "kind", "rarity", "cost"],
 		"refs": {"effect_id": "effects"},
-		"enums": {"rarity": "rarity"},
-		"ranges": {"cost": [0, 9999]},
+		"enums": {"kind": "equip_kind", "rarity": "rarity"},
+		"ranges": {"cost": [0, 99999]},
 	},
 	"items": {
 		"prefix": "ITM_",
@@ -135,6 +135,7 @@ func _enum_value(parser_name: String, value: Variant) -> int:
 	match parser_name:
 		"rarity": return DataEnums.rarity(value)
 		"category": return DataEnums.category(value)
+		"equip_kind": return DataEnums.equip_kind(value)
 		"skill_type": return DataEnums.skill_type(value)
 		"effect_kind": return DataEnums.effect_kind(value)
 		"effect_target": return DataEnums.effect_target(value)
