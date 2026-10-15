@@ -6,7 +6,7 @@ extends RefCounted
 
 enum Rarity { COMMON, GOOD, EXCELLENT, HERO, LEGEND, MYTH }
 enum Category { RACE, CLASS }
-enum EquipmentKind { BASIC, ADVANCED }
+enum EquipRarity { BASIC, FINE, LEGEND, MYTH }
 enum SkillType { DAMAGE, HEAL, SHIELD, AOE, DOT, BUFF, DEBUFF, CONTROL, SUMMON, UTILITY }
 enum EffectKind { BUFF, DEBUFF, DAMAGE, HEAL, SHIELD, DOT, CONTROL, SUMMON, UTILITY }
 enum EffectTarget { SELF, ALLY_SINGLE, ALLY_ALL, ENEMY_SINGLE, ENEMY_ALL, LOWEST_HP_ALLY, HIGHEST_ATK_ENEMY, ALL }
@@ -28,9 +28,11 @@ const CATEGORY := {
 	"职业": Category.CLASS, "class": Category.CLASS, "job": Category.CLASS,
 }
 
-const EQUIP_KIND := {
-	"基础": EquipmentKind.BASIC, "basic": EquipmentKind.BASIC,
-	"高级": EquipmentKind.ADVANCED, "advanced": EquipmentKind.ADVANCED,
+const EQUIP_RARITY := {
+	"基础": EquipRarity.BASIC, "basic": EquipRarity.BASIC,
+	"优质": EquipRarity.FINE, "fine": EquipRarity.FINE,
+	"传说": EquipRarity.LEGEND, "legend": EquipRarity.LEGEND,
+	"神话": EquipRarity.MYTH, "myth": EquipRarity.MYTH,
 }
 
 const SKILL_TYPE := {
@@ -81,8 +83,8 @@ static func rarity(s: Variant) -> int:
 static func category(s: Variant) -> int:
 	return _lookup(CATEGORY, s)
 
-static func equip_kind(s: Variant) -> int:
-	return _lookup(EQUIP_KIND, s)
+static func equip_rarity(s: Variant) -> int:
+	return _lookup(EQUIP_RARITY, s)
 
 static func skill_type(s: Variant) -> int:
 	return _lookup(SKILL_TYPE, s)

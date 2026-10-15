@@ -13,9 +13,9 @@ const SCHEMA := {
 	},
 	"equipment": {
 		"prefix": "EQP_",
-		"required": ["id", "name_zh", "kind", "cost"],
+		"required": ["id", "name_zh", "rarity", "cost"],
 		"refs": {"effect_id": "effects"},
-		"enums": {"kind": "equip_kind"},
+		"enums": {"rarity": "equip_rarity"},
 		"ranges": {"cost": [0, 99999], "stat_mana": [0, 9999], "stat_mana_regen": [0, 9999], "mod_amp_pct": [0, 1000]},
 	},
 	"items": {
@@ -54,6 +54,12 @@ const SCHEMA := {
 		"required": ["id", "difficulty"],
 		"refs": {"effect_id": "effects"},
 		"ranges": {"difficulty": [1, 10]},
+	},
+	"events": {
+		"prefix": "EVT_",
+		"required": ["id", "name_zh", "kind"],
+		"refs": {"effect_id": "effects"},
+		"ranges": {"weight": [0, 999]},
 	},
 }
 
@@ -135,7 +141,7 @@ func _enum_value(parser_name: String, value: Variant) -> int:
 	match parser_name:
 		"rarity": return DataEnums.rarity(value)
 		"category": return DataEnums.category(value)
-		"equip_kind": return DataEnums.equip_kind(value)
+		"equip_rarity": return DataEnums.equip_rarity(value)
 		"skill_type": return DataEnums.skill_type(value)
 		"effect_kind": return DataEnums.effect_kind(value)
 		"effect_target": return DataEnums.effect_target(value)

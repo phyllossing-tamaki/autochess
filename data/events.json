@@ -1,0 +1,17 @@
+[
+	{
+		"id": "EVT_001",
+		"name_zh": "锻造处",
+		"name_en": "Forge",
+		"name_ja": "鍛冶場",
+		"kind": "强化",
+		"stage": "任意",
+		"weight": "",
+		"effect_id": "",
+		"effect_zh": "可选择最多 3 件装备，随机提升稀有度",
+		"effect_en": "",
+		"effect_ja": "",
+		"tags": "强化",
+		"note": "示例行"
+	}
+]
