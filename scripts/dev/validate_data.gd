@@ -13,10 +13,10 @@ const SCHEMA := {
 	},
 	"equipment": {
 		"prefix": "EQP_",
-		"required": ["id", "name_zh", "rarity", "tier", "cost"],
+		"required": ["id", "name_zh", "rarity", "cost"],
 		"refs": {"effect_id": "effects"},
 		"enums": {"rarity": "rarity"},
-		"ranges": {"tier": [1, 4], "cost": [0, 999]},
+		"ranges": {"cost": [0, 9999]},
 	},
 	"items": {
 		"prefix": "ITM_",
