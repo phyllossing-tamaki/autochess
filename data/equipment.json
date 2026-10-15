@@ -13,13 +13,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -36,13 +32,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -59,13 +51,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -82,13 +70,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -105,13 +89,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -128,13 +108,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -151,13 +127,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -174,13 +146,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -197,13 +165,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -220,13 +184,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -243,13 +203,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -266,13 +222,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "基础装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -289,13 +241,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -312,13 +260,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -335,13 +279,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -358,13 +298,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -381,13 +317,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -404,13 +336,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -427,13 +355,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -450,13 +374,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -473,13 +393,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "伤害装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -496,13 +412,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -519,13 +431,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -542,13 +450,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -565,13 +469,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -588,13 +488,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -611,13 +507,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -634,13 +526,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -657,13 +545,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -680,13 +564,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "生存装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -703,13 +583,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -726,13 +602,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -749,13 +621,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -772,13 +640,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -795,13 +659,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -818,13 +678,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -841,13 +697,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -864,13 +716,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -887,13 +735,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "功能装",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -907,16 +751,12 @@
 		"stat_atk": 999,
 		"stat_ap": 999,
 		"stat_def": 999,
-		"stat_hp": "",
+		"stat_hp": 999,
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "神器",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -933,13 +773,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "神器",
+		"tags": "",
 		"note": ""
 	},
 	{
@@ -956,13 +792,9 @@
 		"stat_hp": "",
 		"stat_mana": "",
 		"stat_mana_regen": "",
-		"mod_atk_pct": "",
-		"mod_amp_pct": "",
-		"mod_crit_pct": "",
-		"mod_res_pct": "",
 		"effect_id": "",
 		"effect_zh": "",
-		"tags": "神器",
+		"tags": "",
 		"note": ""
 	}
 ]
