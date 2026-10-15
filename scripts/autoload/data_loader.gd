@@ -18,6 +18,7 @@ const TABLES := {
 	"synergies": "synergies",
 	"skills": "skills",
 	"blessings": "blessings",
+	"occupations": "occupations",
 }
 
 var _tables: Dictionary = {}   ## 表名 -> Array[Dictionary]
@@ -112,6 +113,9 @@ func get_skill(id: String) -> Dictionary:
 
 func get_blessing(id: String) -> Dictionary:
 	return get_row("blessings", id)
+
+func get_occupation(id: String) -> Dictionary:
+	return get_row("occupations", id)
 
 
 ## 取某行的效果定义（读其 effect_id）。

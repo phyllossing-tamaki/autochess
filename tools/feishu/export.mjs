@@ -28,6 +28,7 @@ const TABLES = [
 	{ name: "synergies", node: "XdCVw3iY2iJglCkbCCyc9IAQn4b" },
 	{ name: "skills", node: "U8jUwYlB2ijBAhkFSxscNBbKnrf" },
 	{ name: "blessings", node: "KPlwwgjQcil54JkzEjncd8drnJb" },
+	{ name: "occupations", node: "MrSiw6CnmiIgd3k1xIxcw1mjnEe" },
 ];
 
 const KEYS_ROW = 0;   // 第 1 行（0 基）：英文 key

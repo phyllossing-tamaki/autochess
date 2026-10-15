@@ -49,6 +49,12 @@ const SCHEMA := {
 		"refs": {"effect_id": "effects"},
 		"enums": {"rarity": "rarity"},
 	},
+	"occupations": {
+		"prefix": "OCC_",
+		"required": ["id", "difficulty"],
+		"refs": {"effect_id": "effects"},
+		"ranges": {"difficulty": [1, 10]},
+	},
 }
 
 
