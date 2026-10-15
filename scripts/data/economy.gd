@@ -2,9 +2,10 @@ class_name Economy
 extends RefCounted
 ## 经济与定价常量（镜像《肉鸽自走棋-策划案》rev1283 / 飞书「AutoChess · 数值表」）。
 ## 数值源以飞书为准；此处供代码快速读取，改动请同步飞书与策划案。
+## 注意：下列稀有度价格为「角色（棋子）」价格，与【装备价格无关】。
 
-## 稀有度购买价格：普通/优秀/卓越/英雄/传说/神话（对应 DataEnums.Rarity）
-const RARITY_COST: Array[int] = [100, 200, 500, 900, 1500, 3000]
+## 角色（棋子）购买价格：普通/优秀/卓越/英雄/传说/神话（对应 DataEnums.Rarity）
+const UNIT_RARITY_COST: Array[int] = [100, 200, 500, 900, 1500, 3000]
 
 ## 队伍等级上限（彩蛋 / 随机事件可升至 6）
 const LEVEL_MAX: int = 5
@@ -25,11 +26,11 @@ const STAR_ATK_MULT: Array[float] = [1.0, 1.8, 2.8]
 const STAR_UP_RULE: String = "merge3"
 
 
-## 按稀有度枚举取价格；越界返回 -1。
-static func rarity_cost(rarity: int) -> int:
-	if rarity < 0 or rarity >= RARITY_COST.size():
+## 按角色稀有度枚举取购买价格；越界返回 -1。
+static func unit_rarity_cost(rarity: int) -> int:
+	if rarity < 0 or rarity >= UNIT_RARITY_COST.size():
 		return -1
-	return RARITY_COST[rarity]
+	return UNIT_RARITY_COST[rarity]
 
 
 ## 按星级(1~3)取倍率。

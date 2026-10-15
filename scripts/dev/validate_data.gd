@@ -13,9 +13,9 @@ const SCHEMA := {
 	},
 	"equipment": {
 		"prefix": "EQP_",
-		"required": ["id", "name_zh", "kind", "rarity", "cost"],
+		"required": ["id", "name_zh", "kind", "cost"],
 		"refs": {"effect_id": "effects"},
-		"enums": {"kind": "equip_kind", "rarity": "rarity"},
+		"enums": {"kind": "equip_kind"},
 		"ranges": {"cost": [0, 99999]},
 	},
 	"items": {
