@@ -50,4 +50,5 @@
 ## 数据管线（飞书 → 代码）
 - 子表（两行表头：第 1 行英文 key、第 2 行中文；数据从第 3 行起）→ `tools/feishu/export.mjs` 导出为 `data/*.json` → `DataLoader`（autoload）读取。
 - 字段名必须与表头英文 key 一致；跨表关联统一走 `id` / `effect_id`。
+- id 前缀：`EQP_`装备 `ITM_`道具 `REL_`遗物 `SYN_`羁绊 `SKL_`技能 `CB_`公司祝福 `EFF_`效果 `OCC_`职业病。
 - 运行：`node tools/feishu/export.mjs`；校验：`godot --headless --path . -s res://scripts/dev/validate_data.gd`。
