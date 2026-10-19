@@ -30,6 +30,9 @@ const TABLES = [
 	{ name: "blessings", node: "KPlwwgjQcil54JkzEjncd8drnJb" },
 	{ name: "occupations", node: "MrSiw6CnmiIgd3k1xIxcw1mjnEe" },
 	{ name: "events", node: "DytDwqxUSiFSxvk2x1TcDQ2qneh" },
+	{ name: "characters", node: "PebAwqrUliKNcLkralpckJkvnzh" },
+	{ name: "monsters", node: "Bqe7wJXkiixVKCkfSGQc2g95nqg" },
+	{ name: "probabilities", node: "S7WKw1cr0i5Hv6ksRPncBK2LnHr" },
 ];
 
 const KEYS_ROW = 0;   // 第 1 行（0 基）：英文 key

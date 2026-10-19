@@ -20,6 +20,9 @@ const TABLES := {
 	"blessings": "blessings",
 	"occupations": "occupations",
 	"events": "events",
+	"characters": "characters",
+	"monsters": "monsters",
+	"probabilities": "probabilities",
 }
 
 var _tables: Dictionary = {}   ## 表名 -> Array[Dictionary]
@@ -120,6 +123,12 @@ func get_occupation(id: String) -> Dictionary:
 
 func get_event(id: String) -> Dictionary:
 	return get_row("events", id)
+
+func get_character(id: String) -> Dictionary:
+	return get_row("characters", id)
+
+func get_monster(id: String) -> Dictionary:
+	return get_row("monsters", id)
 
 
 ## 取某行的效果定义（读其 effect_id）。

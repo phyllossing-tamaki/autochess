@@ -38,6 +38,22 @@ func _init(p_id: String = "", p_side: int = 0) -> void:
 	side = p_side
 
 
+## 从数据行（角色表/怪物表导出的一行）构建单位。
+static func from_row(row: Dictionary, p_side: int, px: int, py: int) -> BattleUnit:
+	var u := BattleUnit.new(str(row.get("id", "unit")), p_side)
+	u.max_hp = int(row.get("hp", 1))
+	u.hp = u.max_hp
+	u.atk = int(row.get("atk", 0))
+	u.defense = int(row.get("def", 0))
+	u.atk_speed = int(row.get("atk_speed", 10))
+	u.attack_range = int(row.get("range", 1))
+	u.max_mana = int(row.get("mana", 0))
+	u.skill_id = str(row.get("skill_id", ""))
+	u.x = px
+	u.y = py
+	return u
+
+
 func is_alive() -> bool:
 	return hp > 0
 

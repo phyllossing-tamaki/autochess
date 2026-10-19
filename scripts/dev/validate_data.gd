@@ -61,6 +61,24 @@ const SCHEMA := {
 		"refs": {"effect_id": "effects"},
 		"ranges": {"weight": [0, 999]},
 	},
+	"characters": {
+		"prefix": "CH_",
+		"required": ["id", "name_zh", "rarity", "cost"],
+		"refs": {"skill_id": "skills"},
+		"enums": {"rarity": "rarity"},
+		"ranges": {"cost": [0, 99999], "hp": [0, 99999], "atk": [0, 9999], "def": [0, 9999]},
+	},
+	"monsters": {
+		"prefix": "MON_",
+		"required": ["id", "name_zh"],
+		"refs": {"skill_id": "skills"},
+		"ranges": {"hp": [0, 999999], "atk": [0, 99999], "def": [0, 99999]},
+	},
+	"probabilities": {
+		"prefix": "PRB_",
+		"required": ["id", "level"],
+		"ranges": {"level": [1, 6], "shop_slots": [1, 12]},
+	},
 }
 
 
