@@ -53,6 +53,7 @@ func _add_monster(path: String, foot_x: float, label: String) -> void:
 	var spr := Sprite2D.new()
 	spr.texture = tex
 	spr.centered = false
+	spr.flip_h = true   # 怪物原图朝右，翻转后朝左
 	spr.position = Vector2(foot_x - tex.get_width() * 0.5, GROUND_Y - tex.get_height())
 	add_child(spr)
 	_marks.append({"x": foot_x, "label": label})
