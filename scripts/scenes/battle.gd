@@ -1,7 +1,7 @@
 extends Node2D
 ## 战斗预览（临时）：1600x900，8x4 棋盘（格 96）。
 ## 左：两个英雄（128，20 帧攻击循环）。
-## 右：三只怪物（原图朝右，flip_h 翻转朝左；256 龙按 0.5 显示，128 傀儡 1.0）。
+## 右：三只怪物（原图朝右，flip_h 翻转朝左；全部按 1.0 显示）。
 ## 仅用于美术/比例/站位测试，数据不接角色表。
 
 const CELL := 96.0
@@ -28,9 +28,12 @@ var _hero_tex: Array[Texture2D] = []
 var _mon_tex: Array[Texture2D] = []
 var _anim_frame: int = 0
 var _result_text: String = ""
+@onready var _board: TileMapLayer = $Board
+@onready var _units_root: Node2D = $Units
 
 
 func _ready() -> void:
+	_paint_board()
 	_hero_tex = [_load(HERO_A), _load(HERO_B)]
 	_mon_tex = [_load(MON_DRAGON), _load(MON_HYDRA), _load(MON_GOLEM)]
 	_tick_timer = Timer.new()
@@ -43,6 +46,19 @@ func _ready() -> void:
 	_restart_timer.timeout.connect(_start)
 	add_child(_restart_timer)
 	_start()
+
+
+func _paint_board() -> void:
+	_board.clear()
+	for gy in ROWS:
+		for gx in COLS:
+			var variant := 0 if (gx + gy) % 2 == 0 else 1
+			if (gx * 3 + gy * 5) % 11 == 0:
+				variant = 2
+			elif (gx * 5 + gy * 7) % 13 == 0:
+				variant = 3
+			_board.set_cell(Vector2i(gx, gy), 0, Vector2i(variant, 0))
+	print("[Battle] board %dx%d tiles=%d" % [COLS, ROWS, _board.get_used_cells().size()])
 
 
 func _load(p: String) -> Texture2D:
@@ -95,7 +111,7 @@ func _add_hero(id: String, x: int, y: int, demo: Dictionary, tex: Texture2D, off
 	spr.centered = true
 	spr.offset = Vector2(0, offset_y)
 	spr.z_index = 1
-	add_child(spr)
+	_units_root.add_child(spr)
 	_sprites.append(spr)
 
 
@@ -108,7 +124,7 @@ func _add_monster(id: String, x: int, y: int, demo: Dictionary, tex: Texture2D, 
 	spr.scale = Vector2(scale_f, scale_f)
 	spr.set_meta("feet_y", feet_y)
 	spr.z_index = 1
-	add_child(spr)
+	_units_root.add_child(spr)
 	_sprites.append(spr)
 
 
@@ -155,15 +171,6 @@ func _update_visuals() -> void:
 
 
 func _draw() -> void:
-	draw_rect(Rect2(Vector2.ZERO, Vector2(1600, 900)), Color(0.07, 0.06, 0.09))
-	for gx in COLS:
-		for gy in ROWS:
-			var p := ORIGIN + Vector2(gx * CELL, gy * CELL)
-			var base := Color(0.155, 0.145, 0.195) if (gx + gy) % 2 == 0 else Color(0.135, 0.125, 0.170)
-			draw_rect(Rect2(p, Vector2(CELL, CELL)), base)
-			draw_rect(Rect2(p, Vector2(CELL, CELL)), Color(0.08, 0.07, 0.11), false, 2.0)
-			draw_line(p + Vector2(3, 3), p + Vector2(CELL - 3, 3), Color(0.24, 0.23, 0.30, 0.5), 1.0)
-			draw_line(p + Vector2(3, 3), p + Vector2(3, CELL - 3), Color(0.24, 0.23, 0.30, 0.5), 1.0)
 	for u: BattleUnit in _units:
 		if not u.is_alive():
 			continue
