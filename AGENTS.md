@@ -4,7 +4,7 @@
 - 类型：像素风自走棋（Auto Chess）独立游戏
 - 引擎：**Godot 4.x**，脚本语言 **GDScript**
 - 渲染：`gl_compatibility`（2D 像素，兼容性优先）
-- 逻辑分辨率 1280x720，`canvas_items` 拉伸 + `keep` 比例，纹理过滤为 **Nearest**
+- 逻辑分辨率 1600x900，`canvas_items` 拉伸 + `keep` 比例，纹理过滤为 **Nearest**；战斗格/地砖 96、角色战斗图 128（1:1）
 
 ## 目录约定
 - `scenes/`   场景（.tscn）
@@ -52,3 +52,15 @@
 - 字段名必须与表头英文 key 一致；跨表关联统一走 `id` / `effect_id`。
 - id 前缀：`EQP_`装备 `ITM_`道具 `REL_`遗物 `SYN_`羁绊 `SKL_`技能 `CB_`公司祝福 `EFF_`效果 `OCC_`职业病。
 - 运行：`node tools/feishu/export.mjs`；校验：`godot --headless --path . -s res://scripts/dev/validate_data.gd`。
+
+## MCP（Godot AI 插件）使用安全约定
+- 插件位置：`addons/godot_ai/`（Godot AI，MCP 服务器）。连上 opencode 后，AI 可直接操作**实时编辑器**（场景/节点/资源/脚本/地砖/UI/日志/截图等），**改动范围大、能改项目**。
+- **启用/使用前必须提交**：先让 `git status` 干净；大改动前 `git commit` 做检查点。
+- **分支隔离**：MCP 相关改动放独立分支（如 `ai/godot-mcp`），验证后再合并主线。
+- **只读先行**：先查场景树/日志/文件，再动手；改动小步进行，每步 `git diff` 审查。
+- **不把二进制资源交给 MCP**：图集/音频走 LFS，用 Aseprite/文件替换。
+- **双设备**：不要在两端同时开 MCP 改同一场景；切换设备前 `commit + push`。
+- **服务收紧**：MCP 服务仅绑定 `127.0.0.1`，不对外；用完在面板停服务。
+- **依赖来源**：`uv` 用官方渠道安装；服务版本固定（`godot-ai==4.3.1`），不要改成 latest。
+- **配置备份**：Configure 会写 `~/.config/opencode/opencode.json`，改前先备份；用完可 Remove。
+- **回滚**：`git restore .` / `git clean -fd` / `git reset --hard <checkpoint>`（确认后再用）。
