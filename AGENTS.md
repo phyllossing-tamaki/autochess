@@ -50,7 +50,7 @@
 ## 数据管线（飞书 → 代码）
 - 子表（两行表头：第 1 行英文 key、第 2 行中文；数据从第 3 行起）→ `tools/feishu/export.mjs` 导出为 `data/*.json` → `DataLoader`（autoload）读取。
 - 字段名必须与表头英文 key 一致；跨表关联统一走 `id` / `effect_id`。
-- id 前缀：`EQP_`装备 `ITM_`道具 `REL_`遗物 `SYN_`羁绊 `SKL_`技能 `CB_`公司祝福 `EFF_`效果 `OCC_`职业病。
+- id 前缀：`EQP_`装备 `ITM_`道具 `REL_`遗物 `SYN_`羁绊 `SKL_`技能 `CB_`公司福利 `EFF_`效果 `OCC_`职业病。
 - 运行：`node tools/feishu/export.mjs`；校验：`godot --headless --path . -s res://scripts/dev/validate_data.gd`。
 
 ## MCP（Godot AI 插件）使用安全约定
@@ -62,5 +62,6 @@
 - **双设备**：不要在两端同时开 MCP 改同一场景；切换设备前 `commit + push`。
 - **服务收紧**：MCP 服务仅绑定 `127.0.0.1`，不对外；用完在面板停服务。
 - **依赖来源**：`uv` 用官方渠道安装；服务版本固定（`godot-ai==4.3.1`），不要改成 latest。
+- **换机必做（uvx 可见性）**：插件用 `CliFinder` 找 `uvx.exe`，只查固定目录（`~/.local/bin`、`%LOCALAPPDATA%\Programs\uv`、`%ProgramFiles%\uv` 等），**不搜 PATH、也不搜 `WinGet\Links`**。新设备装完 uv 后，把 `uv.exe` + `uvx.exe` 复制到 `%USERPROFILE%\.local\bin`，否则面板报「No godot-ai server command was found」、MCP 起不来（编辑器日志里插件已加载但 8000 端口无监听）。
 - **配置备份**：Configure 会写 `~/.config/opencode/opencode.json`，改前先备份；用完可 Remove。
 - **回滚**：`git restore .` / `git clean -fd` / `git reset --hard <checkpoint>`（确认后再用）。
