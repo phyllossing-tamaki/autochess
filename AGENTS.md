@@ -62,5 +62,6 @@
 - **双设备**：不要在两端同时开 MCP 改同一场景；切换设备前 `commit + push`。
 - **服务收紧**：MCP 服务仅绑定 `127.0.0.1`，不对外；用完在面板停服务。
 - **依赖来源**：`uv` 用官方渠道安装；服务版本固定（`godot-ai==4.3.1`），不要改成 latest。
+- **换机必做（uvx 可见性）**：插件用 `CliFinder` 找 `uvx.exe`，只查固定目录（`~/.local/bin`、`%LOCALAPPDATA%\Programs\uv`、`%ProgramFiles%\uv` 等），**不搜 PATH、也不搜 `WinGet\Links`**。新设备装完 uv 后，把 `uv.exe` + `uvx.exe` 复制到 `%USERPROFILE%\.local\bin`，否则面板报「No godot-ai server command was found」、MCP 起不来（编辑器日志里插件已加载但 8000 端口无监听）。
 - **配置备份**：Configure 会写 `~/.config/opencode/opencode.json`，改前先备份；用完可 Remove。
 - **回滚**：`git restore .` / `git clean -fd` / `git reset --hard <checkpoint>`（确认后再用）。
