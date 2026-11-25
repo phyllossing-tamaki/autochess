@@ -1,7 +1,7 @@
 [
 	{
 		"id": "EQP_001",
-		"name_zh": "",
+		"name_zh": "铁剑",
 		"name_en": "",
 		"name_ja": "",
 		"rarity": "",
@@ -21,7 +21,7 @@
 	},
 	{
 		"id": "EQP_002",
-		"name_zh": "",
+		"name_zh": "长矛",
 		"name_en": "",
 		"name_ja": "",
 		"rarity": "",
@@ -41,7 +41,7 @@
 	},
 	{
 		"id": "EQP_003",
-		"name_zh": "",
+		"name_zh": "小圆盾",
 		"name_en": "",
 		"name_ja": "",
 		"rarity": "",
@@ -61,7 +61,7 @@
 	},
 	{
 		"id": "EQP_004",
-		"name_zh": "",
+		"name_zh": "水晶球",
 		"name_en": "",
 		"name_ja": "",
 		"rarity": "",
@@ -81,7 +81,7 @@
 	},
 	{
 		"id": "EQP_005",
-		"name_zh": "",
+		"name_zh": "法杖",
 		"name_en": "",
 		"name_ja": "",
 		"rarity": "",
@@ -101,7 +101,7 @@
 	},
 	{
 		"id": "EQP_006",
-		"name_zh": "",
+		"name_zh": "草鞋",
 		"name_en": "",
 		"name_ja": "",
 		"rarity": "",
